@@ -151,7 +151,14 @@
                     android:textColor="@android:color/darker_gray"
                     android:textSize="18dp"></TextView>
             </LinearLayout>
-
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="Nguyễn Võ Thành Nhân-21115053120230"
+                android:layout_marginTop="10dp">
+            </TextView>
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>
