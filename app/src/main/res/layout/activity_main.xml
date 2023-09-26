@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/background1">
+    </ImageView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="500dp"
+        android:layout_height="700dp"
+        android:layout_marginTop="140dp"
+
+        app:cardBackgroundColor="@color/material_on_surface_disabled"
+        app:cardCornerRadius="300px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/chuck"
+                android:textAlignment="center"
+                android:text="LOG IN"
+                android:textColor="@color/white"
+                android:layout_marginTop="30dp"
+                android:textSize="50dp"
+                android:onClick="signup">
+
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/botron_edittext"
+                android:fontFamily="@font/chuck"
+                android:hint="Email address"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/botron_edittext"
+                android:fontFamily="@font/chuck"
+                android:hint="Password"
+                android:paddingLeft="20dp"
+                android:textColor="@color/black"></EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bg1"
+                android:fontFamily="@font/chuck"
+                android:text="Login"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                app:backgroundTint="@null">
+            </Button>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="or with"
+                android:textColor="@android:color/darker_gray"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/sanitalic"
+                android:textSize="18dp">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                >
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/google"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                </ImageView>
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/facebook"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                </ImageView>
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/instagram_2111463"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/sanitalic"
+                    android:text="Sign up?"
+                    android:paddingLeft="20dp"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18dp"
+                    android:onClick="signup">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="@font/sanitalic"
+                    android:text="Forgot password?"
+                    android:paddingRight="20dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18dp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+</RelativeLayout>
